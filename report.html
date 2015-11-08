@@ -1,0 +1,761 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>35</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>6</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>6</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>28</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.48</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">logIn_withOut_pause</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">CreateCoupon_withOut_pause</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">SearchCoupon_withOut_pause</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult3">Logout_withOut_pause</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult4">LogInDrop_withOut_pause</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult5">CreateCoupon_withOutPause_DatePicker</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">logIn_withOut_pause.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">logIn_type</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/auth/login</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=section#page form.well.form-horizontal.auth input[name='email']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>demo@open-eshop.com</td>
+	<td>login</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=section#page form.well.form-horizontal.auth input[name='email']</td>
+	<td>${login}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>demo</td>
+	<td>pass</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=section#page form.well.form-horizontal.auth input[name='password']</td>
+	<td>${pass}</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertNotText</td>
+	<td>css=section#page form.well.form-horizontal.auth input[name='password']</td>
+	<td>${pass}</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertNotValue</td>
+	<td>css=section#page form.well.form-horizontal.auth input[name='password']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertChecked</td>
+	<td>css=section#page form.well.form-horizontal.auth input[name='remember']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=section#page form.well.form-horizontal.auth input[name='remember']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertNotChecked</td>
+	<td>css=section#page form.well.form-horizontal.auth input[name='remember']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=section#page form.well.form-horizontal.auth button.btn-primary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=div#content div.page-header h1</td>
+	<td>Welcome admin</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>css=div#content div.page-header h1</td>
+	<td>Welcome admin</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">CreateCoupon_withOut_pause.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">CreateCoupon</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=div.page-header h1</td>
+	<td>Welcome admin</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>css=h1</td>
+	<td>Welcome admin</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>Astest</td>
+	<td>CouponName</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeEval</td>
+	<td>Math.floor(1 + Math.random()*9)</td>
+	<td>CouponQty</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeEval</td>
+	<td>new Date(Math.random()*new Date()).toISOString().split("T")[0]</td>
+	<td>MyDate</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div#accordion h4.panel-title span.title-txt.active</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>link=Coupons</td>
+	<td>Coupons</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Coupons</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>Coupon</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertNotText</td>
+	<td>css=div.table-responsive td</td>
+	<td>${CouponName}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='content']/a/i</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>New Coupon</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=formorm_name</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertValue</td>
+	<td>id=formorm_name</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=formorm_name</td>
+	<td>${CouponName}</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertValue</td>
+	<td>id=formorm_number_coupons</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=formorm_number_coupons</td>
+	<td>${CouponQty}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=formorm[valid_date]</td>
+	<td>${MyDate}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=formorm[submit]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>Coupon</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>css=div.table-responsive tr &gt; td</td>
+	<td>${CouponName}</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">SearchCoupon_withOut_pause.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">SearchCoupon</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>Coupon</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>Astest</td>
+	<td>CouponName</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>css=input.form-control[placeholder="Coupon name"]</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertVisible</td>
+	<td>css=input.form-control[placeholder="Coupon name"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=name</td>
+	<td>${CouponName}</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertVisible</td>
+	<td>css=div.bs-docs-nav &gt; div#content &gt; form.form-inline.pull-right button.btn[type="submit"]</td>
+	<td>Search</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.bs-docs-nav &gt; div#content &gt; form.form-inline.pull-right button.btn[type="submit"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForLocation</td>
+	<td>http://demo.open-eshop.com/oc-panel/Coupon?name=${CouponName}</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=div.table-responsive</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertVisible</td>
+	<td>css=div#content div.panel.panel-default tbody tr a.btn-danger.index-delete</td>
+	<td>Delete</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div#content div.panel.panel-default tbody tr a.btn-danger.index-delete</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForLocation</td>
+	<td>http://demo.open-eshop.com/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertNotText</td>
+	<td>css=div.table-responsive td</td>
+	<td>${CouponName}</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">Logout_withOut_pause.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Logout</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>Coupon</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertVisible</td>
+	<td>css=.navbar-btn .caret</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=.navbar-btn .caret</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult4">LogInDrop_withOut_pause.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">LogInDrop_with_assert</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/auth/login</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTitle</td>
+	<td>Login - DoFree.se</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=email</td>
+	<td>demo@open-eshop.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=password</td>
+	<td>demo</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyNotText</td>
+	<td>name=password</td>
+	<td>demo</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertNotValue</td>
+	<td>name=password</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertChecked</td>
+	<td>name=remember</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=remember</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertNotChecked</td>
+	<td>name=remember</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='mobile-menu-panel']/ul[2]/li/a</td>
+	<td>Visit Site</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult5">CreateCoupon_withOutPause_DatePicker.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">CreateCoupon_with_DatePicker</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=div.page-header h1</td>
+	<td>Welcome admin</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>css=h1</td>
+	<td>Welcome admin</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>Astest</td>
+	<td>CouponName</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeEval</td>
+	<td>Math.floor(1 + Math.random()*9)</td>
+	<td>CouponQty</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeEval</td>
+	<td>new Date(Math.random()*new Date()).toISOString().split("T")[0]</td>
+	<td>MyDate</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=eShop</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>link=Coupons</td>
+	<td>Coupons</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Coupons</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>Coupon</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertNotText</td>
+	<td>css=div.table-responsive td</td>
+	<td>${CouponName}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='content']/a/i</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>New Coupon</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=formorm_name</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertValue</td>
+	<td>id=formorm_name</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=formorm_name</td>
+	<td>${CouponName}</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertValue</td>
+	<td>id=formorm_number_coupons</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=formorm_number_coupons</td>
+	<td>${CouponQty}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>runScript</td>
+	<td>$('input[data-toggle="datepicker"]').datepicker('show')</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>runScript</td>
+	<td>$('input[data-toggle="datepicker"]').datepicker('setValue', '${MyDate}')</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>runScript</td>
+	<td>$('input[data-toggle="datepicker"]').datepicker('hide')</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=formorm[valid_date]</td>
+	<td>${MyDate}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=formorm[submit]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>Coupon</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>css=div.table-responsive tr &gt; td</td>
+	<td>${CouponName}</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/logIn_withOut_pause.html
+info: Executing: |open | /oc-panel/auth/login |  |
+info: Executing: |waitForElementPresent | css=section#page form.well.form-horizontal.auth input[name=&apos;email&apos;] |  |
+info: Executing: |store | demo@open-eshop.com | login |
+info: Executing: |type | css=section#page form.well.form-horizontal.auth input[name=&apos;email&apos;] | ${login} |
+info: Executing: |store | demo | pass |
+info: Executing: |type | css=section#page form.well.form-horizontal.auth input[name=&apos;password&apos;] | ${pass} |
+info: Executing: |assertNotText | css=section#page form.well.form-horizontal.auth input[name=&apos;password&apos;] | ${pass} |
+info: Executing: |assertNotValue | css=section#page form.well.form-horizontal.auth input[name=&apos;password&apos;] |  |
+info: Executing: |assertChecked | css=section#page form.well.form-horizontal.auth input[name=&apos;remember&apos;] |  |
+info: Executing: |click | css=section#page form.well.form-horizontal.auth input[name=&apos;remember&apos;] |  |
+info: Executing: |assertNotChecked | css=section#page form.well.form-horizontal.auth input[name=&apos;remember&apos;] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=section#page form.well.form-horizontal.auth button.btn-primary |  |
+info: Executing: |waitForElementPresent | css=div#content div.page-header h1 | Welcome admin |
+info: Executing: |assertText | css=div#content div.page-header h1 | Welcome admin |
+info: Starting test /selenium-server/tests/CreateCoupon_withOut_pause.html
+info: Executing: |open | /oc-panel/ |  |
+info: Executing: |waitForElementPresent | css=div.page-header h1 | Welcome admin |
+info: Executing: |assertText | css=h1 | Welcome admin |
+info: Executing: |store | Astest | CouponName |
+info: Executing: |storeEval | Math.floor(1 + Math.random()*9) | CouponQty |
+info: script is: Math.floor(1 + Math.random()*9)
+info: Executing: |storeEval | new Date(Math.random()*new Date()).toISOString().split(&quot;T&quot;)[0] | MyDate |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: script is: new Date(Math.random()*new Date()).toISOString().split(&quot;T&quot;)[0]
+info: Executing: |click | css=div#accordion h4.panel-title span.title-txt.active |  |
+info: Executing: |assertText | link=Coupons | Coupons |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | link=Coupons |  |
+info: Executing: |waitForText | css=h1 | Coupon |
+info: Executing: |assertNotText | css=div.table-responsive td | ${CouponName} |
+info: Executing: |click | //div[@id=&apos;content&apos;]/a/i |  |
+info: Executing: |waitForText | css=h1 | New Coupon |
+info: Executing: |click | id=formorm_name |  |
+info: Executing: |assertValue | id=formorm_name |  |
+info: Executing: |type | id=formorm_name | ${CouponName} |
+info: Executing: |assertValue | id=formorm_number_coupons |  |
+info: Executing: |type | id=formorm_number_coupons | ${CouponQty} |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | name=formorm[valid_date] | ${MyDate} |
+info: Executing: |click | name=formorm[submit] |  |
+info: Executing: |waitForText | css=h1 | Coupon |
+info: Executing: |assertText | css=div.table-responsive tr &gt; td | ${CouponName} |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Starting test /selenium-server/tests/SearchCoupon_withOut_pause.html
+info: Executing: |open | /oc-panel/Coupon |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForText | css=h1 | Coupon |
+info: Executing: |store | Astest | CouponName |
+info: Executing: |assertElementPresent | css=input.form-control[placeholder=&quot;Coupon name&quot;] |  |
+info: Executing: |assertVisible | css=input.form-control[placeholder=&quot;Coupon name&quot;] |  |
+info: Executing: |type | name=name | ${CouponName} |
+info: Executing: |assertVisible | css=div.bs-docs-nav &gt; div#content &gt; form.form-inline.pull-right button.btn[type=&quot;submit&quot;] | Search |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=div.bs-docs-nav &gt; div#content &gt; form.form-inline.pull-right button.btn[type=&quot;submit&quot;] |  |
+info: Executing: |waitForLocation | http://demo.open-eshop.com/oc-panel/Coupon?name=${CouponName} |  |
+info: Executing: |waitForElementPresent | css=div.table-responsive |  |
+info: Executing: |assertVisible | css=div#content div.panel.panel-default tbody tr a.btn-danger.index-delete | Delete |
+info: Executing: |click | css=div#content div.panel.panel-default tbody tr a.btn-danger.index-delete |  |
+info: Executing: |waitForLocation | http://demo.open-eshop.com/oc-panel/Coupon |  |
+info: Executing: |assertNotText | css=div.table-responsive td | ${CouponName} |
+info: Starting test /selenium-server/tests/Logout_withOut_pause.html
+info: Executing: |open | /oc-panel/Coupon |  |
+info: Executing: |waitForText | css=h1 | Coupon |
+info: Executing: |assertVisible | css=.navbar-btn .caret |  |
+info: Executing: |click | css=.navbar-btn .caret |  |
+info: Executing: |assertElementPresent | link=Logout |  |
+info: Executing: |click | link=Logout |  |
+info: Executing: |waitForElementPresent | link=Login |  |
+info: Starting test /selenium-server/tests/LogInDrop_withOut_pause.html
+info: Executing: |open | /oc-panel/auth/login |  |
+info: Executing: |waitForTitle | Login - DoFree.se |  |
+info: Executing: |click | link=Login |  |
+info: Executing: |type | name=email | demo@open-eshop.com |
+info: Executing: |type | name=password | demo |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |verifyNotText | name=password | demo |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertNotValue | name=password |  |
+info: Executing: |assertChecked | name=remember |  |
+info: Executing: |click | name=remember |  |
+info: Executing: |assertNotChecked | name=remember |  |
+info: Executing: |click | //button[@type=&apos;submit&apos;] |  |
+info: Executing: |waitForElementPresent | //div[@id=&apos;mobile-menu-panel&apos;]/ul[2]/li/a | Visit Site |
+info: Starting test /selenium-server/tests/CreateCoupon_withOutPause_DatePicker.html
+info: Executing: |open | /oc-panel/ |  |
+info: Executing: |waitForElementPresent | css=div.page-header h1 | Welcome admin |
+info: Executing: |assertText | css=h1 | Welcome admin |
+info: Executing: |store | Astest | CouponName |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeEval | Math.floor(1 + Math.random()*9) | CouponQty |
+info: script is: Math.floor(1 + Math.random()*9)
+info: Executing: |storeEval | new Date(Math.random()*new Date()).toISOString().split(&quot;T&quot;)[0] | MyDate |
+info: script is: new Date(Math.random()*new Date()).toISOString().split(&quot;T&quot;)[0]
+info: Executing: |click | link=eShop |  |
+info: Executing: |assertText | link=Coupons | Coupons |
+info: Executing: |click | link=Coupons |  |
+info: Executing: |waitForText | css=h1 | Coupon |
+info: Executing: |assertNotText | css=div.table-responsive td | ${CouponName} |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | //div[@id=&apos;content&apos;]/a/i |  |
+info: Executing: |waitForText | css=h1 | New Coupon |
+info: Executing: |click | id=formorm_name |  |
+info: Executing: |assertValue | id=formorm_name |  |
+info: Executing: |type | id=formorm_name | ${CouponName} |
+info: Executing: |assertValue | id=formorm_number_coupons |  |
+info: Executing: |type | id=formorm_number_coupons | ${CouponQty} |
+info: Executing: |runScript | $(&apos;input[data-toggle=&quot;datepicker&quot;]&apos;).datepicker(&apos;show&apos;) |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |runScript | $(&apos;input[data-toggle=&quot;datepicker&quot;]&apos;).datepicker(&apos;setValue&apos;, &apos;${MyDate}&apos;) |  |
+info: Executing: |runScript | $(&apos;input[data-toggle=&quot;datepicker&quot;]&apos;).datepicker(&apos;hide&apos;) |  |
+info: Executing: |type | name=formorm[valid_date] | ${MyDate} |
+info: Executing: |click | name=formorm[submit] |  |
+info: Executing: |waitForText | css=h1 | Coupon |
+info: Executing: |assertText | css=div.table-responsive tr &gt; td | ${CouponName} |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+</pre></body></html>
