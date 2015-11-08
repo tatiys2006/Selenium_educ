@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://demo.open-eshop.com/" />
+<title>SearchCoupon</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SearchCoupon</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>Coupon</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Astest</td>
+	<td>CouponName</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=input.form-control[placeholder=&quot;Coupon name&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=input.form-control[placeholder=&quot;Coupon name&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=name</td>
+	<td>${CouponName}</td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=div.bs-docs-nav &gt; div#content &gt; form.form-inline.pull-right button.btn[type=&quot;submit&quot;]</td>
+	<td>Search</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.bs-docs-nav &gt; div#content &gt; form.form-inline.pull-right button.btn[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForLocation</td>
+	<td>http://demo.open-eshop.com/oc-panel/Coupon?name=${CouponName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.table-responsive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=div#content div.panel.panel-default tbody tr a.btn-danger.index-delete</td>
+	<td>Delete</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#content div.panel.panel-default tbody tr a.btn-danger.index-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForLocation</td>
+	<td>http://demo.open-eshop.com/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotText</td>
+	<td>css=div.table-responsive td</td>
+	<td>${CouponName}</td>
+</tr>
+</tbody></table>
+</body>
+</html>
